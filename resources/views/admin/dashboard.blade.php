@@ -1,4 +1,4 @@
-{{-- ANGGOTA 1: dashboard --}}
+{{-- ANGGOTA 1 Mahendra: dashboard --}}
 @extends('layouts.app')
 @section('judul', 'Dashboard')
 

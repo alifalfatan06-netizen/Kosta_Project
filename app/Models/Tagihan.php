@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 3  |  LOGIKA INTI: hitung listrik, denda, total
+// ANGGOTA 3 Alip  |  LOGIKA INTI: hitung listrik, denda, total
 namespace App\Models;
 
 use Carbon\Carbon;

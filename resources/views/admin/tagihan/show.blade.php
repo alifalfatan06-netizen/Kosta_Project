@@ -1,4 +1,4 @@
-{{-- ANGGOTA 3: rincian + bayar tunai --}}
+{{-- ANGGOTA 3 Alip: rincian + bayar tunai --}}
 @extends('layouts.app')
 @section('judul', 'Detail Tagihan')
 

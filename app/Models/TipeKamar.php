@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 1
+// ANGGOTA 1 Mahendra
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;

@@ -9,7 +9,7 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-    // ANGGOTA 1: pagination gaya Bootstrap 5
+    // ANGGOTA 1 Mahendra: pagination gaya Bootstrap 5
     Paginator::useBootstrapFive();
     }
 

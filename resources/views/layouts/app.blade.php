@@ -1,4 +1,4 @@
-{{-- ANGGOTA 1 (fondasi): layout utama --}}
+{{-- ANGGOTA 1 Mahendra (fondasi): layout utama --}}
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -20,11 +20,11 @@
                 @auth
                     @if (auth()->user()->role === 'admin')
                         <li class="nav-item"><a class="nav-link" href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                        {{-- Menu Anggota 1 --}}
+                        {{-- Menu Anggota 1 Mahendra --}}
                         <li class="nav-item"><a class="nav-link" href="{{ route('admin.kamar.index') }}">Kamar</a></li>
-                        {{-- Menu Anggota 2 --}}
+                        {{-- Menu Anggota 2 Althaf --}}
                         <li class="nav-item"><a class="nav-link" href="{{ route('admin.kontrak.index') }}">Kontrak</a></li>
-                        {{-- Menu Anggota 3 --}}
+                        {{-- Menu Anggota 3 Alip --}}
                         <li class="nav-item"><a class="nav-link" href="{{ route('admin.tagihan.index') }}">Tagihan</a></li>
                     @else
                         <li class="nav-item"><a class="nav-link" href="{{ route('portal.index') }}">Portal Saya</a></li>

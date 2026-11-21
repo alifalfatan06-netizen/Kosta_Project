@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 1 (fondasi)  |  Pemakaian: ->middleware('role:admin')
+// ANGGOTA 1 Mahendra (fondasi)  |  Pemakaian: ->middleware('role:admin')
 namespace App\Http\Middleware;
 
 use Closure;

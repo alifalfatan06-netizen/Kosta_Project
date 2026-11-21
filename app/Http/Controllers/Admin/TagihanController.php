@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 3  |  CRUD TAGIHAN  |  total = sewa + (pemakaian x tarif) + denda
+// ANGGOTA 3 Alip |  CRUD TAGIHAN  |  total = sewa + (pemakaian x tarif) + denda
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;

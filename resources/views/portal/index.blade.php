@@ -1,4 +1,4 @@
-{{-- ANGGOTA 3: portal penghuni --}}
+{{-- ANGGOTA 3 Alip: portal penghuni --}}
 @extends('layouts.app')
 @section('judul', 'Portal Penghuni')
 

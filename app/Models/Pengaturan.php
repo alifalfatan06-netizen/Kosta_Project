@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 1  |  Pemakaian: Pengaturan::ambil('tarif_listrik', 1500)
+// ANGGOTA 1 Mahendra  |  Pemakaian: Pengaturan::ambil('tarif_listrik', 1500)
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;

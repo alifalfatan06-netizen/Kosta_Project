@@ -1,4 +1,4 @@
-{{-- ANGGOTA 1: detail kamar + riwayat kontrak --}}
+{{-- ANGGOTA 1 Mahendra: detail kamar + riwayat kontrak --}}
 @extends('layouts.app')
 @section('judul', 'Detail Kamar')
 

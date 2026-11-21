@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // ANGGOTA 1
+        // ANGGOTA 1 Mahendra
 Schema::create('tipe_kamar', function (Blueprint $table) {
     $table->id();
     $table->string('nama');

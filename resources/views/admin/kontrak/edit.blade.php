@@ -1,4 +1,4 @@
-{{-- ANGGOTA 2: edit / perpanjang kontrak --}}
+{{-- ANGGOTA 2 Althaf: edit / perpanjang kontrak --}}
 @extends('layouts.app')
 @section('judul', 'Edit Kontrak')
 

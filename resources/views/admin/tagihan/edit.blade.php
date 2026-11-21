@@ -1,4 +1,4 @@
-{{-- ANGGOTA 3: input meter listrik --}}
+{{-- ANGGOTA 3 Alip: input meter listrik --}}
 @extends('layouts.app')
 @section('judul', 'Input Meter')
 

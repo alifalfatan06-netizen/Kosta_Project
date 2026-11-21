@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // ANGGOTA 3  |  total = nominal + biaya_listrik + denda
+        // ANGGOTA 3 Alip  |  total = nominal + biaya_listrik + denda
 Schema::create('tagihan', function (Blueprint $table) {
     $table->id();
     $table->foreignId('kontrak_id')->constrained('kontrak');

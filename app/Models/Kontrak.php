@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 2
+// ANGGOTA 2 Althaf
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -20,7 +20,7 @@ class Kontrak extends Model
         return $this->belongsTo(Penghuni::class);
     }
 
-    public function tagihan() // relasi ke milik Anggota 3
+    public function tagihan() // relasi ke milik Alip
     {
         return $this->hasMany(Tagihan::class);
     }

@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 1 (fondasi)  |  Supaya semua anggota bisa kerja tanpa saling menunggu
+// ANGGOTA 1 Mahendra (fondasi)  |  Supaya Mahendra, Althaf, dan Alip bisa kerja tanpa saling menunggu
 namespace Database\Seeders;
 
 use App\Models\Kamar;
@@ -46,7 +46,7 @@ class DatabaseSeeder extends Seeder
         Kamar::create(['tipe_kamar_id' => $vip->id, 'nomor_kamar' => '301', 'lantai' => 3,
             'harga_sewa' => 1800000, 'deposit' => 1800000, 'fasilitas' => 'AC, Water Heater, TV']);
 
-        // contoh penghuni + kontrak + tagihan (untuk Anggota 2 & 3)
+        // contoh penghuni + kontrak + tagihan (untuk Althaf & Alip)
         $userBudi = User::create(['name' => 'Budi Santoso', 'email' => 'budi@kosta.test', 'password' => 'password', 'role' => 'penghuni']);
         $budi = Penghuni::create([
             'user_id' => $userBudi->id, 'nama' => 'Budi Santoso', 'no_hp' => '081234567890',

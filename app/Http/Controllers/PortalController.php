@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 3  |  Portal penghuni: hanya melihat data MILIKNYA sendiri
+// ANGGOTA 3 Alip  |  Portal penghuni: hanya melihat data MILIKNYA sendiri
 namespace App\Http\Controllers;
 
 use App\Models\Kontrak;

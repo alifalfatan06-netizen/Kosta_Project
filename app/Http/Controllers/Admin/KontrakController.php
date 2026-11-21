@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 2  |  CRUD KONTRAK (+ penghuni & akun otomatis)
+// ANGGOTA 2 Althaf |  CRUD KONTRAK (+ penghuni & akun otomatis)
 // store() otomatis: buat user -> penghuni -> kontrak -> kamar "terisi" -> tagihan deposit & sewa pertama
 namespace App\Http\Controllers\Admin;
 
@@ -98,7 +98,7 @@ class KontrakController extends Controller
             // 4) kamar jadi terisi
             $kamar->update(['status' => 'terisi']);
 
-            // 5) tagihan deposit + sewa pertama (tabel milik Anggota 3)
+            // 5) tagihan deposit + sewa pertama (tabel milik Alip)
             Tagihan::create([
                 'kontrak_id' => $kontrak->id, 'jenis' => 'deposit', 'jatuh_tempo' => $mulai,
                 'nominal' => $kontrak->deposit, 'total' => $kontrak->deposit, 'status' => 'belum_bayar',

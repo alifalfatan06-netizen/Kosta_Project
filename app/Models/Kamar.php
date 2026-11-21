@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 1
+// ANGGOTA 1 Mahendra
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -19,7 +19,7 @@ class Kamar extends Model
         return $this->hasMany(Kontrak::class);
     }
 
-    // Kamar::tersedia()->get()  (dipakai katalog & form kontrak Anggota 2)
+    // Kamar::tersedia()->get()  (dipakai katalog & form kontrak Althaf)
     public function scopeTersedia($query)
     {
         return $query->where('status', 'tersedia');

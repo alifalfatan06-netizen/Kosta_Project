@@ -1,4 +1,4 @@
-{{-- ANGGOTA 2: detail kontrak + tagihannya --}}
+{{-- ANGGOTA 2 Althaf: detail kontrak + tagihannya --}}
 @extends('layouts.app')
 @section('judul', 'Detail Kontrak')
 

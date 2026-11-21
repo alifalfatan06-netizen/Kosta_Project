@@ -1,4 +1,4 @@
-{{-- ANGGOTA 3: CRUD Tagihan - daftar + generate + WA --}}
+{{-- ANGGOTA 3 Alip: CRUD Tagihan - daftar + generate + WA --}}
 @extends('layouts.app')
 @section('judul', 'Data Tagihan')
 

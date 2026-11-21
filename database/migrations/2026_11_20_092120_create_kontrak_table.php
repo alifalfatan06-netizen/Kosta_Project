@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // ANGGOTA 2 (pusat database: kamar + penghuni + periode)
+        // ANGGOTA 2 Althaf (pusat database: kamar + penghuni + periode)
 Schema::create('kontrak', function (Blueprint $table) {
     $table->id();
     $table->foreignId('kamar_id')->constrained('kamar');

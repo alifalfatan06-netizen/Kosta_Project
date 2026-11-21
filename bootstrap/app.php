@@ -12,7 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-    // ANGGOTA 1: daftarkan alias 'role'
+    // ANGGOTA 1 Mahendra: daftarkan alias 'role'
     $middleware->alias([
         'role' => \App\Http\Middleware\RoleMiddleware::class,
     ]);

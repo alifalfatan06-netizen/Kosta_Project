@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 1  |  Katalog publik + filter tipe, harga maksimal, lantai
+// ANGGOTA 1 Mahendra  |  Katalog publik + filter tipe, harga maksimal, lantai
 namespace App\Http\Controllers;
 
 use App\Models\Kamar;

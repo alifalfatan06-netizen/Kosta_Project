@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 1 (fondasi)
+// ANGGOTA 1 Mahendra (fondasi)
 namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;

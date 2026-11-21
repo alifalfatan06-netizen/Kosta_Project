@@ -1,4 +1,4 @@
-{{-- ANGGOTA 1: katalog publik + filter --}}
+{{-- ANGGOTA 1 Mahendra: katalog publik + filter --}}
 @extends('layouts.app')
 @section('judul', 'Kamar Tersedia')
 

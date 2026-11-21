@@ -1,4 +1,4 @@
-{{-- ANGGOTA 3: tagihan sewa manual --}}
+{{-- ANGGOTA 3 Alip: tagihan sewa manual --}}
 @extends('layouts.app')
 @section('judul', 'Tagihan Manual')
 

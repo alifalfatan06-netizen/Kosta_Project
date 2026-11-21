@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // ANGGOTA 1 (dipakai Anggota 3 untuk hitung listrik & denda)
+        // ANGGOTA 1 Mahendra (dipakai Alip untuk hitung listrik & denda)
 Schema::create('pengaturan', function (Blueprint $table) {
     $table->id();
     $table->string('kunci')->unique();

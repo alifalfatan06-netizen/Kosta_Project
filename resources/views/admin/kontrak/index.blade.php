@@ -1,4 +1,4 @@
-{{-- ANGGOTA 2: CRUD Kontrak - daftar --}}
+{{-- ANGGOTA 2 Althaf: CRUD Kontrak - daftar --}}
 @extends('layouts.app')
 @section('judul', 'Data Kontrak')
 

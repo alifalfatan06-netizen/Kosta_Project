@@ -1,4 +1,4 @@
-{{-- ANGGOTA 2: form buat kontrak + data penghuni --}}
+{{-- ANGGOTA 2 Althaf: form buat kontrak + data penghuni --}}
 @extends('layouts.app')
 @section('judul', 'Buat Kontrak')
 

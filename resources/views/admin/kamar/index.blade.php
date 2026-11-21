@@ -1,4 +1,4 @@
-{{-- ANGGOTA 1: CRUD Kamar - daftar --}}
+{{-- ANGGOTA 1 Mahendra: CRUD Kamar - daftar --}}
 @extends('layouts.app')
 @section('judul', 'Data Kamar')
 

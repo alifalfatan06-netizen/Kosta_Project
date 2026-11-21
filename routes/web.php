@@ -1,5 +1,5 @@
 <?php
-// Aturan: tiap anggota HANYA menambah route di blok miliknya (biar Git tidak bentrok)
+// Aturan: Mahendra, Althaf, dan Alip hanya menambah route di blok masing-masing (biar Git tidak bentrok)
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\KamarController;
 use App\Http\Controllers\Admin\KontrakController;
@@ -9,7 +9,7 @@ use App\Http\Controllers\KatalogController;
 use App\Http\Controllers\PortalController;
 use Illuminate\Support\Facades\Route;
 
-// ---------- [ANGGOTA 1] Halaman publik & login ----------
+// ---------- [ANGGOTA 1 Mahendra] Halaman publik & login ----------
 Route::get('/', [KatalogController::class, 'index'])->name('katalog');
 Route::get('/login', [AuthController::class, 'form'])->name('login')->middleware('guest');
 Route::post('/login', [AuthController::class, 'proses'])->name('login.proses')->middleware('guest');
@@ -18,21 +18,21 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout')->middl
 // ---------- Area ADMIN ----------
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->group(function () {
 
-    // [ANGGOTA 1] Dashboard + CRUD Kamar
+    // [ANGGOTA 1 Mahendra] Dashboard + CRUD Kamar
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('kamar', KamarController::class)->parameters(['kamar' => 'kamar']);
 
-    // [ANGGOTA 2] CRUD Kontrak + akhiri kontrak
+    // [ANGGOTA 2 Althaf] CRUD Kontrak + akhiri kontrak
     Route::post('kontrak/{kontrak}/akhiri', [KontrakController::class, 'akhiri'])->name('kontrak.akhiri');
     Route::resource('kontrak', KontrakController::class)->parameters(['kontrak' => 'kontrak']);
 
-    // [ANGGOTA 3] CRUD Tagihan + bayar tunai + generate bulanan
+    // [ANGGOTA 3 Alip] CRUD Tagihan + bayar tunai + generate bulanan
     Route::post('generate-tagihan', [TagihanController::class, 'generate'])->name('tagihan.generate');
     Route::post('tagihan/{tagihan}/bayar', [TagihanController::class, 'bayar'])->name('tagihan.bayar');
     Route::resource('tagihan', TagihanController::class)->parameters(['tagihan' => 'tagihan']);
 });
 
-// ---------- [ANGGOTA 3] Portal PENGHUNI ----------
+// ---------- [ANGGOTA 3 Alip] Portal PENGHUNI ----------
 Route::middleware(['auth', 'role:penghuni'])->group(function () {
     Route::get('/portal', [PortalController::class, 'index'])->name('portal.index');
 });

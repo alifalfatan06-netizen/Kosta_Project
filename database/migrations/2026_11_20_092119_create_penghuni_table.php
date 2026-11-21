@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // ANGGOTA 2
+        // ANGGOTA 2 Althaf
 Schema::create('penghuni', function (Blueprint $table) {
     $table->id();
     $table->foreignId('user_id')->constrained('users');

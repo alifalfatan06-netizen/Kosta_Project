@@ -1,5 +1,5 @@
 <?php
-// ANGGOTA 2
+// ANGGOTA 2 Althaf
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;

@@ -1,5 +1,7 @@
 <?php
-// ANGGOTA 1
+// ANGGOTA 1 Mahendra 
+// ANGGOTA 2 Althaf
+// ANGGOTA 3 Alip
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
