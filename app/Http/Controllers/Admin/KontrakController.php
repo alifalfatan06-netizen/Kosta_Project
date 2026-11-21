@@ -58,6 +58,7 @@ class KontrakController extends Controller
             'durasi_bulan'  => 'required|integer|min:1|max:60',
             'catatan'       => 'nullable|string|max:500',
         ]);
+        $durasiBulan = (int) $data['durasi_bulan'];
 
         $kamar = Kamar::findOrFail($data['kamar_id']);
 
@@ -68,7 +69,7 @@ class KontrakController extends Controller
 
         $passwordAwal = Str::random(8);
 
-        $kontrak = DB::transaction(function () use ($request, $data, $kamar, $passwordAwal) {
+        $kontrak = DB::transaction(function () use ($request, $data, $kamar, $passwordAwal, $durasiBulan) {
             // 1) akun login
             $user = User::create([
                 'name' => $data['nama'], 'email' => $data['email'],
@@ -88,8 +89,8 @@ class KontrakController extends Controller
             $kontrak = Kontrak::create([
                 'kamar_id' => $kamar->id, 'penghuni_id' => $penghuni->id,
                 'tanggal_mulai' => $mulai,
-                'tanggal_selesai' => $mulai->copy()->addMonthsNoOverflow($data['durasi_bulan']),
-                'durasi_bulan' => $data['durasi_bulan'],
+                'tanggal_selesai' => $mulai->copy()->addMonthsNoOverflow($durasiBulan),
+                'durasi_bulan' => $durasiBulan,
                 'harga_sewa' => $kamar->harga_sewa, 'deposit' => $kamar->deposit,
                 'status' => 'aktif', 'catatan' => $data['catatan'] ?? null,
             ]);
@@ -143,8 +144,9 @@ class KontrakController extends Controller
             'durasi_bulan' => 'required|integer|min:1|max:60',
             'catatan'      => 'nullable|string|max:500',
         ]);
+        $durasiBulan = (int) $data['durasi_bulan'];
 
-        DB::transaction(function () use ($request, $data, $kontrak) {
+        DB::transaction(function () use ($request, $data, $kontrak, $durasiBulan) {
             $penghuni = $kontrak->penghuni;
 
             if ($request->hasFile('foto_ktp')) {
@@ -161,8 +163,8 @@ class KontrakController extends Controller
             $penghuni->user->update(['name' => $data['nama']]);
 
             $kontrak->update([
-                'durasi_bulan' => $data['durasi_bulan'],
-                'tanggal_selesai' => $kontrak->tanggal_mulai->copy()->addMonthsNoOverflow($data['durasi_bulan']),
+                'durasi_bulan' => $durasiBulan,
+                'tanggal_selesai' => $kontrak->tanggal_mulai->copy()->addMonthsNoOverflow($durasiBulan),
                 'catatan' => $data['catatan'] ?? null,
             ]);
         });
