@@ -1,5 +1,4 @@
 <?php
-// ANGGOTA 1 Mahendra (fondasi)
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
